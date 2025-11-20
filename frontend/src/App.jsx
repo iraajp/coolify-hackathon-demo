@@ -6,8 +6,10 @@ function App() {
   const [error, setError] = useState(false)
 
   useEffect(() => {
-    // Call backend API
-    fetch('/api/hello')
+    // Call backend API directly
+    const backendUrl = 'http://pcoc80owgwkso00ws0wkkw08.65.20.71.32.sslip.io/api/hello'
+    
+    fetch(backendUrl)
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok')
