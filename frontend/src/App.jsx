@@ -7,7 +7,7 @@ function App() {
 
   useEffect(() => {
     // Call backend API directly
-    const backendUrl = 'http://pcoc80owgwkso00ws0wkkw08.65.20.71.32.sslip.io/api/hello'
+    const backendUrl = 'http://pcoc80owgwkso00ws0wkkw08.65.20.71.32.sslip.io/api/'
     
     fetch(backendUrl)
       .then(response => {
